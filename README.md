@@ -2,7 +2,7 @@
 
 ◈Projeto onde o objetivo é criar um website utilizando base64 e Cifra de César que fosse capaz de codificar e decodificar a mensagem de texto que o usuário escrever, podendo ainda escolher qual dos dois ele deseja utilizar.
 
-<h2>Os requisitos pedidos foram:</2>
+<h2>Os requisitos pedidos foram:</h2>
 
 Um campo de entrada textual, da mensagem que será codificada ou decodificada;
 
