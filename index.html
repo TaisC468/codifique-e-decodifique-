@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/style.css" rel="stylesheet" />
+  
+    <title>En & De:Code</title>
+  </head>
+  <body>
+<div id="principal">
+    <div class="separar">
+      <header class="titulo">
+        <h1><img class="alterar" src="images/icon-icon(350×350 px) - Editado - Editado.png">En & De Code<img class="alterar" src="images/icon-icon(350×350 px) - Editado - Editado.png"></h1><br>
+      
+      </header>
+    </div>
+
+    <div class="explicação">
+       <selection id="expli">
+        <h3>✦Base64 & Cifra de César✦</h3>
+        <div id="mudar">
+          <h4>O qué base64?</h4>
+            <p>A Base64 é uma base numérica o qual contém 64 algoritmos de 0 a 63, contendo nele todas as letras do alfabeto, tanto maiúsculas (A-Z) quanto as minúsculas (a-z), os números de 0 – 9, e por último temos os dois caracteres especiais (\ e +) para completar a tabela com 64 algoritmos.</p>
+            <p>Ela é um algorítimo para codificação de informações para transferência na internet. Geralmente é utilizada quando há necessidade de transmitir dados binários (um sistema numérico) para um dispositivo ao qual trabalha com dados textuais.</p>
+
+          <h4>O que é Cifra de César?</h4>
+            <p>A Cifra de César é uma técnica de criptografia bem simples muito conhecida. Ela é uma cifra de substituição (um sistema pré-definido de substituição.) no qual cada letra de um determinado texto será substituída por outra do alfabeto, deslocando um certo número de posições de forma constante, ou seja, sempre será utilizada as mesmas letras. Por exemplo, iremos utilizar uma troca de três posições, A iria ser substituído por D, B por E… H por K e assim com todas as letras do texto a ser criptografado.</p>
+
+          <h4>Como codificar a sua mensagem?</h4>
+            <p>Abaixo você poderá codificar e decodificar a seu texto utilizando base64 ou Cifra de César, basta escrever a mensagem que quer codificar ou decodificar e escolher a opção que deseja, em seguida clique em codificar e seu resultado aparecerá.</p>
+            <p></p>
+          <br>
+        </div>
+      </selection>
+        <br>
+    </div>
+
+    <div class="container">
+      <form class="form" name="formulario">
+
+        <fieldset>
+          <legend>Codificando mensagem</legend>
+
+          <div class="entrada">
+            <input type="text" name="texto" id="texto" class="inputTexto" placeholder="Digite sua mensagem"/>
+          </div>
+
+          <div class="escolha">
+            <label for="option">Escolha o modo</label>
+            <select name="chooseCod" class="chooseCod" id="escolherCod" required>
+              <option value="semValor" id="semValor" disabled selected>Opções</option>
+              <option value="cCesar" id="cCesar">Cifra de César</option>
+              <option value="Base64" id="base64">Base64</option>
+            </select>
+          </div>
+
+          <div class="incremento" style="display: none" id="valorIncremento">
+            <p>Incremento da chave</p>
+            <input type="number" class="inputIncremento" id="numeroIncrementos" default="0" min="1" value="1" />
+          </div>
+
+          <div class="codificr">
+            <input type="radio" name="codific" id="codificar" class="radioBtn" value="codificar" /><label for="codificar">Codificar</label>
+            <input type="radio" name="codific" id="decodificar"  class="radioBtn" value="decodificar" /><label for="decodificar">Decodificar</label>
+          </div>
+
+          <div class="areabtn">
+            <button type="submit" class="btn" id="submit">Codifique sua mensagem aqui!</button>
+          </div>
+
+          <div class="resultado">
+            <textarea disabled class="aresultado" id="resultadoTexto" placeholder="Sua mensagem será gerada aqui"></textarea>
+          </div>
+        </fieldset>
+        <br>
+      </form>
+    </div>
+    <a href="#" class="scrolltop"><i class=""><button>Topo</button></i></a>
+    </div>
+    <script src="script/script.js"></script>
+  </body>
+</html>
